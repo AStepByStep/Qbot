@@ -335,6 +335,9 @@ OPTIONS:
 启动 WEB 服务：
 
 ```
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+go build -v
 ./investool webserver
 ```
 
